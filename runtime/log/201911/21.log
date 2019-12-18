@@ -1,0 +1,903 @@
+---------------------------------------------------------------
+[ 2019-11-21T17:27:17+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.027614s] [吞吐率：36.21req/s] [内存消耗：1,934.87kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-21T17:27:17+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.047467s] [吞吐率：21.07req/s] [内存消耗：2,609.06kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012932s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005543s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.001560s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:27:19+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customerAdd
+[运行时间：0.040848s] [吞吐率：24.48req/s] [内存消耗：2,158.48kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customerAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customerAdd' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customerAdd[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\dy\public/../application/index\view\basics\customer_add.html [ array (
+  0 => 'trade',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012929s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select type_id as 'trade_id',type_name as 'trade_name' from sys_type a inner join sys_group b on a.group_id = b.group_id where a.is_use = 1 and b.column_name = 'trade_id' [ RunTime:0.002033s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:27:37+08:00 ] 127.0.0.1 POST www.dy.com/index/Basics/customerAddSubmit
+[运行时间：0.018369s] [吞吐率：54.44req/s] [内存消耗：1,707.48kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customerAddSubmit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '138',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/index/Basics/customerAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customerAddSubmit' => '',
+  'customer_code' => '仲爽555',
+  'password' => '123456',
+  'company' => '仲爽',
+  'linkman' => '',
+  'phone' => '1111',
+  'address' => '',
+  'trade_id' => '102',
+  'is_use' => 'on',
+  'remark' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customerAddSubmit[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-21T17:29:38+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customerAdd
+[运行时间：0.043024s] [吞吐率：23.24req/s] [内存消耗：2,158.62kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customerAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customerAdd' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customerAdd[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\dy\public/../application/index\view\basics\customer_add.html [ array (
+  0 => 'trade',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012800s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select type_id as 'trade_id',type_name as 'trade_name' from sys_type a inner join sys_group b on a.group_id = b.group_id where a.is_use = 1 and b.column_name = 'trade_id' [ RunTime:0.002188s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:29:53+08:00 ] 127.0.0.1 POST www.dy.com/index/Basics/customerAddSubmit
+[运行时间：0.045475s] [吞吐率：21.99req/s] [内存消耗：2,602.66kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customerAddSubmit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '134',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/index/Basics/customerAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customerAddSubmit' => '',
+  'customer_code' => '仲爽',
+  'password' => '123456',
+  'company' => '仲爽',
+  'linkman' => '',
+  'phone' => '111',
+  'address' => '',
+  'trade_id' => '102',
+  'is_use' => 'on',
+  'remark' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customerAddSubmit[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012405s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.007527s ]
+[ sql ] [ SQL ] SELECT * FROM `bf_customer` WHERE  `customer_code` = '仲爽' LIMIT 1 [ RunTime:0.002140s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:30:00+08:00 ] 127.0.0.1 POST www.dy.com/index/Basics/customerAddSubmit
+[运行时间：0.109183s] [吞吐率：9.16req/s] [内存消耗：2,606.03kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customerAddSubmit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '142',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/index/Basics/customerAdd',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customerAddSubmit' => '',
+  'customer_code' => '仲爽11111444',
+  'password' => '123456',
+  'company' => '仲爽',
+  'linkman' => '',
+  'phone' => '111',
+  'address' => '',
+  'trade_id' => '102',
+  'is_use' => 'on',
+  'remark' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customerAddSubmit[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011863s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005343s ]
+[ sql ] [ SQL ] SELECT * FROM `bf_customer` WHERE  `customer_code` = '仲爽11111444' LIMIT 1 [ RunTime:0.001986s ]
+[ sql ] [ SQL ] INSERT INTO `bf_customer` (`customer_code` , `create_time` , `password` , `token` , `company` , `linkman` , `phone` , `address` , `trade_id` , `is_use` , `remark`) VALUES ('仲爽11111444' , '2019-11-21 17:30:00' , 'e10adc3949ba59abbe56e057f20f883e' , 'a0088a4c-5de9-240b-2d71-83f1aca5ed48' , '仲爽' , NULL , '111' , NULL , 102 , 1 , '') [ RunTime:0.061451s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:33:32+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.017021s] [吞吐率：58.75req/s] [内存消耗：1,548.75kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Basics::setWidget()[D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php:860]
+---------------------------------------------------------------
+[ 2019-11-21T17:33:57+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.019513s] [吞吐率：51.25req/s] [内存消耗：1,792.37kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-21T17:33:57+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.043682s] [吞吐率：22.89req/s] [内存消耗：2,613.52kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012458s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005634s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.001360s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.001514s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:33:59+08:00 ] 127.0.0.1 POST www.dy.com/index/Basics/setCustomer
+[运行时间：0.043936s] [吞吐率：22.76req/s] [内存消耗：2,695.16kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'setCustomer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/setCustomer' => '',
+  'id' => '16',
+)
+[ info ] [ RUN ] app\index\controller\Basics->setCustomer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012030s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005379s ]
+[ sql ] [ SQL ] SELECT * FROM `bf_customer` WHERE  `customer_id` = 0 LIMIT 1 [ RunTime:0.002889s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:34:01+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.016349s] [吞吐率：61.17req/s] [内存消耗：1,792.37kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-21T17:34:01+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.034003s] [吞吐率：29.41req/s] [内存消耗：2,613.52kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003022s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005241s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.001449s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.001633s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:34:07+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.016054s] [吞吐率：62.29req/s] [内存消耗：1,792.37kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-21T17:34:07+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.043758s] [吞吐率：22.85req/s] [内存消耗：2,613.52kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012689s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005520s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.001395s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.001556s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:34:09+08:00 ] 127.0.0.1 POST www.dy.com/index/Basics/setCustomer
+[运行时间：0.042924s] [吞吐率：23.30req/s] [内存消耗：2,695.16kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'setCustomer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/setCustomer' => '',
+  'id' => '16',
+)
+[ info ] [ RUN ] app\index\controller\Basics->setCustomer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012067s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005358s ]
+[ sql ] [ SQL ] SELECT * FROM `bf_customer` WHERE  `customer_id` = 0 LIMIT 1 [ RunTime:0.002083s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:34:14+08:00 ] 127.0.0.1 POST www.dy.com/index/Basics/setCustomer
+[运行时间：0.045793s] [吞吐率：21.84req/s] [内存消耗：2,695.16kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'setCustomer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/setCustomer' => '',
+  'id' => '17',
+)
+[ info ] [ RUN ] app\index\controller\Basics->setCustomer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013172s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005460s ]
+[ sql ] [ SQL ] SELECT * FROM `bf_customer` WHERE  `customer_id` = 0 LIMIT 1 [ RunTime:0.002054s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:35:11+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.022748s] [吞吐率：43.96req/s] [内存消耗：1,792.37kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-21T17:35:11+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.038123s] [吞吐率：26.23req/s] [内存消耗：2,613.52kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002656s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005457s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.001927s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.002101s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:35:12+08:00 ] 127.0.0.1 POST www.dy.com/index/Basics/setCustomer
+[运行时间：0.105012s] [吞吐率：9.52req/s] [内存消耗：2,700.23kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'setCustomer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/setCustomer' => '',
+  'id' => '16',
+)
+[ info ] [ RUN ] app\index\controller\Basics->setCustomer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012673s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005668s ]
+[ sql ] [ SQL ] SELECT * FROM `bf_customer` WHERE  `customer_id` = 16 LIMIT 1 [ RunTime:0.001291s ]
+[ sql ] [ SQL ] UPDATE `bf_customer`  SET `is_use`=0  WHERE  `customer_id` = 16 [ RunTime:0.057305s ]
+[ sql ] [ SQL ] SELECT * FROM `bf_customer` WHERE  `customer_id` = 16 LIMIT 1 [ RunTime:0.002144s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:35:15+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.018366s] [吞吐率：54.45req/s] [内存消耗：1,792.37kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-21T17:35:15+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.051436s] [吞吐率：19.44req/s] [内存消耗：2,613.52kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013520s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005504s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.003021s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.001888s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:35:18+08:00 ] 127.0.0.1 POST www.dy.com/index/Basics/setCustomer
+[运行时间：0.106078s] [吞吐率：9.43req/s] [内存消耗：2,700.23kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'setCustomer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/setCustomer' => '',
+  'id' => '16',
+)
+[ info ] [ RUN ] app\index\controller\Basics->setCustomer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011884s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005489s ]
+[ sql ] [ SQL ] SELECT * FROM `bf_customer` WHERE  `customer_id` = 16 LIMIT 1 [ RunTime:0.002079s ]
+[ sql ] [ SQL ] UPDATE `bf_customer`  SET `is_use`=1  WHERE  `customer_id` = 16 [ RunTime:0.059754s ]
+[ sql ] [ SQL ] SELECT * FROM `bf_customer` WHERE  `customer_id` = 16 LIMIT 1 [ RunTime:0.002160s ]
+---------------------------------------------------------------
+[ 2019-11-21T17:39:47+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.023066s] [吞吐率：43.35req/s] [内存消耗：1,792.37kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-21T17:39:47+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.038304s] [吞吐率：26.11req/s] [内存消耗：2,613.52kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3702.0 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=4ks8oorrb4sbbc16392fh8tc20',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\PHPTutorial\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002597s ] mysql:host=192.168.7.139;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.005499s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.001227s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.002247s ]

@@ -1,0 +1,4011 @@
+---------------------------------------------------------------
+[ 2019-11-24T16:31:18+08:00 ] 127.0.0.1 GET www.dy.com/
+[运行时间：0.909052s] [吞吐率：1.10req/s] [内存消耗：1,827.27kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->login[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T16:33:02+08:00 ] 127.0.0.1 POST www.dy.com/index/User/toLogin
+[运行时间：0.253015s] [吞吐率：3.95req/s] [内存消耗：2,498.38kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'toLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/toLogin' => '',
+  'account' => 'zhongs',
+  'password' => '828310',
+)
+[ info ] [ RUN ] app\index\controller\User->toLogin[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.040002s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.069004s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` WHERE  `user_code` = 'zhongs'  AND `password` = '461368fae047aad1333d94aa2ae12ab3'  AND `is_use` = 1 LIMIT 1 [ RunTime:0.035002s ]
+[ sql ] [ SQL ] UPDATE `sys_user`  SET `login_date`='2019-11-24 16:33:02'  WHERE  `user_code` = 'zhongs'  AND `password` = '461368fae047aad1333d94aa2ae12ab3'  AND `is_use` = 1 [ RunTime:0.041003s ]
+---------------------------------------------------------------
+[ 2019-11-24T16:33:03+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.057003s] [吞吐率：17.54req/s] [内存消耗：1,851.45kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T16:33:06+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.071004s] [吞吐率：14.08req/s] [内存消耗：1,828.40kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T16:33:06+08:00 ] 127.0.0.1 GET www.dy.com/index/menu/index
+[运行时间：0.068004s] [吞吐率：14.70req/s] [内存消耗：1,401.28kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/menu/index' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T16:33:20+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：1,688.23kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T16:33:20+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.064003s] [吞吐率：15.62req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T16:33:22+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/group
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：1,935.89kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/group' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->group[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\basics\group.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T16:33:22+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/groupList?page=1&limit=10
+[运行时间：0.126007s] [吞吐率：7.94req/s] [内存消耗：2,598.29kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'groupList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/group',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/groupList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->groupList[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_group` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_group` LIMIT 1 [ RunTime:0.031002s ]
+[ sql ] [ SQL ] select * from sys_group limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T16:33:25+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：1,936.04kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T16:33:25+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.191011s] [吞吐率：5.24req/s] [内存消耗：2,608.17kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.050003s ]
+---------------------------------------------------------------
+[ 2019-11-24T16:33:27+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/widgetEdit?id=undefined
+[运行时间：0.162010s] [吞吐率：6.17req/s] [内存消耗：2,740.55kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'widgetEdit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/widgetEdit' => '',
+  'id' => 'undefined',
+)
+[ info ] [ RUN ] app\index\controller\Basics->widgetEdit[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\basics\widget_edit.html [ array (
+  0 => 'list',
+  1 => 'widget',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select type_id as 'app_id',type_name as 'app_name' from sys_type a inner join sys_group b on a.group_id = b.group_id where a.is_use = 1 and b.column_name = 'app_id' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_widget` [ RunTime:0.049003s ]
+[ sql ] [ SQL ] SELECT * FROM `bf_widget` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.012001s ]
+---------------------------------------------------------------
+[ 2019-11-24T17:44:02+08:00 ] 127.0.0.1 GET www.dy.com/index/Base/no
+[运行时间：0.144008s] [吞吐率：6.94req/s] [内存消耗：2,570.40kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Base',
+    2 => 'no',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Base/no' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Base->no[ D:\phpstudy\WWW\dy\application\index\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cm_kol.industry_list' doesn't exist[D:\phpstudy\WWW\dy\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-11-24T17:44:05+08:00 ] 127.0.0.1 GET www.dy.com/index/Base/no
+[运行时间：0.128008s] [吞吐率：7.81req/s] [内存消耗：2,569.93kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Base',
+    2 => 'no',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Base/no' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Base->no[ D:\phpstudy\WWW\dy\application\index\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cm_kol.industry_list' doesn't exist[D:\phpstudy\WWW\dy\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-11-24T18:19:11+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.058004s] [吞吐率：17.24req/s] [内存消耗：1,845.31kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:19:11+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.056004s] [吞吐率：17.86req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:19:12+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/group
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：1,789.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/group' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->group[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\basics\group.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:19:12+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：1,789.85kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:19:12+08:00 ] 127.0.0.1 GET www.dy.com/index/Base/no
+[运行时间：0.090005s] [吞吐率：11.11req/s] [内存消耗：2,570.40kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Base',
+    2 => 'no',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Base/no' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Base->no[ D:\phpstudy\WWW\dy\application\index\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cm_kol.industry_list' doesn't exist[D:\phpstudy\WWW\dy\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-11-24T18:19:12+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/groupList?page=1&limit=10
+[运行时间：0.083005s] [吞吐率：12.05req/s] [内存消耗：2,598.29kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'groupList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/group',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/groupList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->groupList[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_group` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_group` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select * from sys_group limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T18:19:12+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.081005s] [吞吐率：12.34req/s] [内存消耗：2,608.17kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-11-24T18:19:16+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/task_col
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：1,460.87kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'task_col',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/task_col' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Task::task()[D:\phpstudy\WWW\dy\application\index\controller\Task.php:283]
+---------------------------------------------------------------
+[ 2019-11-24T18:20:06+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.059004s] [吞吐率：16.95req/s] [内存消耗：1,688.23kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:20:07+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.053003s] [吞吐率：18.87req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:20:07+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.048003s] [吞吐率：20.83req/s] [内存消耗：1,789.85kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:20:07+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/group
+[运行时间：0.077005s] [吞吐率：12.99req/s] [内存消耗：1,789.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/group' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->group[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\basics\group.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:20:07+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/task_col
+[运行时间：0.064003s] [吞吐率：15.62req/s] [内存消耗：1,728.29kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'task_col',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/task_col' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:20:07+08:00 ] 127.0.0.1 GET www.dy.com/index/Base/no
+[运行时间：0.092006s] [吞吐率：10.87req/s] [内存消耗：2,570.40kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Base',
+    2 => 'no',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Base/no' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Base->no[ D:\phpstudy\WWW\dy\application\index\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cm_kol.industry_list' doesn't exist[D:\phpstudy\WWW\dy\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-11-24T18:20:07+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.079004s] [吞吐率：12.66req/s] [内存消耗：2,608.17kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-24T18:20:07+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/groupList?page=1&limit=10
+[运行时间：0.089005s] [吞吐率：11.24req/s] [内存消耗：2,598.29kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'groupList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/group',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/groupList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->groupList[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_group` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_group` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select * from sys_group limit 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-24T18:21:09+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：1,845.27kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:21:09+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:21:09+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/group
+[运行时间：0.061004s] [吞吐率：16.39req/s] [内存消耗：1,789.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/group' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->group[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\basics\group.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:21:09+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customer
+[运行时间：0.063004s] [吞吐率：15.87req/s] [内存消耗：1,789.85kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customer' => '',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customer[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\basics\customer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:21:09+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/task_col
+[运行时间：0.059003s] [吞吐率：16.95req/s] [内存消耗：1,728.29kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'task_col',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/task_col' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:21:09+08:00 ] 127.0.0.1 GET www.dy.com/index/Base/no
+[运行时间：0.094005s] [吞吐率：10.64req/s] [内存消耗：2,570.40kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Base',
+    2 => 'no',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Base/no' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Base->no[ D:\phpstudy\WWW\dy\application\index\controller\Base.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cm_kol.industry_list' doesn't exist[D:\phpstudy\WWW\dy\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-11-24T18:21:10+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/groupList?page=1&limit=10
+[运行时间：0.108006s] [吞吐率：9.26req/s] [内存消耗：2,598.29kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'groupList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/group',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/groupList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->groupList[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_group` [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_group` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select * from sys_group limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T18:21:10+08:00 ] 127.0.0.1 GET www.dy.com/index/Basics/customertList?page=1&limit=10
+[运行时间：0.105006s] [吞吐率：9.52req/s] [内存消耗：2,608.17kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Basics',
+    2 => 'customertList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Basics/customer',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Basics/customertList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Basics->customertList[ D:\phpstudy\WWW\dy\application\index\controller\Basics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bf_customer` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bf_customer` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name as trade_name FROM `bf_customer` `a` INNER JOIN `sys_type` `b` ON `a`.`trade_id`=b.type_id and b.group_id = 11 LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T18:22:22+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.050003s] [吞吐率：20.00req/s] [内存消耗：1,688.23kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:22:45+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:22:56+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskCol
+[运行时间：0.050003s] [吞吐率：20.00req/s] [内存消耗：1,836.46kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskCol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskCol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskCol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_col.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:22:56+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColList?page=1&limit=10
+[运行时间：0.154008s] [吞吐率：6.49req/s] [内存消耗：2,546.06kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.type_name' in 'field list'[D:\phpstudy\WWW\dy\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-11-24T18:23:06+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColList?page=1&limit=10
+[运行时间：0.114006s] [吞吐率：8.77req/s] [内存消耗：2,545.95kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001001s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.type_name' in 'field list'[D:\phpstudy\WWW\dy\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-11-24T18:26:17+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.046002s] [吞吐率：21.74req/s] [内存消耗：1,688.23kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:26:17+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:26:17+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskCol
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：1,693.70kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskCol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskCol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskCol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_col.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T18:26:18+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColList?page=1&limit=10
+[运行时间：0.070004s] [吞吐率：14.28req/s] [内存消耗：2,507.96kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_Id order by task_kol_id desc limit 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-24T19:01:00+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskCol
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：1,696.76kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskCol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskCol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskCol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_col.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T19:01:01+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColList?page=1&limit=10
+[运行时间：0.075005s] [吞吐率：13.33req/s] [内存消耗：2,511.10kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_Id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T19:01:02+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColEdit?task_kol_id=2
+[运行时间：0.108006s] [吞吐率：9.26req/s] [内存消耗：1,959.68kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColEdit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColEdit' => '',
+  'task_kol_id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColEdit[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select task_id,task_name from bus_task where is_use = 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: task_col_id[D:\phpstudy\WWW\dy\application\index\controller\Task.php:317]
+---------------------------------------------------------------
+[ 2019-11-24T19:01:24+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.046003s] [吞吐率：21.74req/s] [内存消耗：1,688.23kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T19:01:24+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.048003s] [吞吐率：20.83req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T19:01:24+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskCol
+[运行时间：0.043003s] [吞吐率：23.25req/s] [内存消耗：1,696.88kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskCol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskCol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskCol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_col.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T19:01:24+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColList?page=1&limit=10
+[运行时间：0.086005s] [吞吐率：11.63req/s] [内存消耗：2,511.10kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_Id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T19:01:26+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColEdit?task_kol_id=2
+[运行时间：0.082004s] [吞吐率：12.19req/s] [内存消耗：2,554.32kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColEdit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColEdit' => '',
+  'task_kol_id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColEdit[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select task_id,task_name from bus_task where is_use = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.012001s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'b.type_name' in 'field list'[D:\phpstudy\WWW\dy\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-11-24T19:01:50+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskCol
+[运行时间：0.058003s] [吞吐率：17.24req/s] [内存消耗：1,696.66kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskCol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskCol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskCol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_col.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T19:01:50+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColList?page=1&limit=10
+[运行时间：0.062003s] [吞吐率：16.13req/s] [内存消耗：2,511.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_Id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T19:01:51+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColEdit?task_kol_id=2
+[运行时间：0.081005s] [吞吐率：12.34req/s] [内存消耗：2,554.27kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColEdit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColEdit' => '',
+  'task_kol_id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColEdit[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select task_id,task_name from bus_task where is_use = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.012001s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'task_col_id' in 'where clause'[D:\phpstudy\WWW\dy\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-11-24T19:02:36+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskCol
+[运行时间：0.042002s] [吞吐率：23.81req/s] [内存消耗：1,696.66kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskCol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskCol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskCol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_col.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T19:02:36+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColList?page=1&limit=10
+[运行时间：0.072004s] [吞吐率：13.89req/s] [内存消耗：2,511.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_Id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T19:02:38+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColEdit?task_kol_id=2
+[运行时间：0.075005s] [吞吐率：13.33req/s] [内存消耗：2,652.06kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColEdit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColEdit' => '',
+  'task_kol_id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColEdit[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_col_edit.html [ array (
+  0 => 'task',
+  1 => 'task_col',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select task_id,task_name from bus_task where is_use = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`task_name` FROM `bus_task_kol` `a` INNER JOIN `bus_task` `b` ON `a`.`task_id`=`b`.`task_id` WHERE  `task_kol_id` = 0 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T19:03:21+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskCol
+[运行时间：0.070004s] [吞吐率：14.28req/s] [内存消耗：1,696.66kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskCol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskCol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskCol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_col.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T19:03:21+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColList?page=1&limit=10
+[运行时间：0.064004s] [吞吐率：15.62req/s] [内存消耗：2,511.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_Id order by task_kol_id desc limit 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-24T19:03:23+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColEdit?task_kol_id=2
+[运行时间：0.089005s] [吞吐率：11.24req/s] [内存消耗：2,652.34kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColEdit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Task/taskCol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ui87b9aoupj2ohem2tini2aui7',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColEdit' => '',
+  'task_kol_id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskColEdit[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_col_edit.html [ array (
+  0 => 'task',
+  1 => 'task_col',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select task_id,task_name from bus_task where is_use = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`task_name` FROM `bus_task_kol` `a` INNER JOIN `bus_task` `b` ON `a`.`task_id`=`b`.`task_id` WHERE  `task_kol_id` = 0 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:06:21+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.062004s] [吞吐率：16.13req/s] [内存消耗：1,704.55kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:06:21+08:00 ] 127.0.0.1 GET www.dy.com/
+[运行时间：0.044003s] [吞吐率：22.73req/s] [内存消耗：1,684.70kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->login[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:06:25+08:00 ] 127.0.0.1 POST www.dy.com/index/User/toLogin
+[运行时间：0.088005s] [吞吐率：11.36req/s] [内存消耗：2,496.37kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'toLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '31',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/toLogin' => '',
+  'account' => 'admin',
+  'password' => 'admin123',
+)
+[ info ] [ RUN ] app\index\controller\User->toLogin[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` WHERE  `user_code` = 'admin'  AND `password` = '0192023a7bbd73250516f069df18b500'  AND `is_use` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `sys_user`  SET `login_date`='2019-11-24 20:06:25'  WHERE  `user_code` = 'admin'  AND `password` = '0192023a7bbd73250516f069df18b500'  AND `is_use` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:06:38+08:00 ] 127.0.0.1 POST www.dy.com/index/User/toLogin
+[运行时间：0.123007s] [吞吐率：8.13req/s] [内存消耗：2,498.38kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'toLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/toLogin' => '',
+  'account' => 'zhongs',
+  'password' => '828310',
+)
+[ info ] [ RUN ] app\index\controller\User->toLogin[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` WHERE  `user_code` = 'zhongs'  AND `password` = '461368fae047aad1333d94aa2ae12ab3'  AND `is_use` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `sys_user`  SET `login_date`='2019-11-24 20:06:38'  WHERE  `user_code` = 'zhongs'  AND `password` = '461368fae047aad1333d94aa2ae12ab3'  AND `is_use` = 1 [ RunTime:0.043003s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:06:39+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：1,688.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:06:39+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.049002s] [吞吐率：20.41req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:06:39+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskCol
+[运行时间：0.048002s] [吞吐率：20.83req/s] [内存消耗：1,728.48kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskCol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskCol' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:19:12+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：1,845.27kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:19:12+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.061004s] [吞吐率：16.39req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:19:15+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.413024s] [吞吐率：2.42req/s] [内存消耗：1,467.63kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[D:\phpstudy\WWW\dy\application\index\controller\Task.php:295]
+---------------------------------------------------------------
+[ 2019-11-24T20:19:31+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.048002s] [吞吐率：20.83req/s] [内存消耗：1,688.23kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:19:31+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.065004s] [吞吐率：15.38req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:19:31+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.042002s] [吞吐率：23.81req/s] [内存消耗：1,471.49kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[D:\phpstudy\WWW\dy\application\index\controller\Task.php:324]
+---------------------------------------------------------------
+[ 2019-11-24T20:19:47+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：1,688.23kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:19:47+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:19:47+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：1,840.73kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:19:48+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColList?page=1&limit=10
+[运行时间：0.047002s] [吞吐率：21.28req/s] [内存消耗：1,732.80kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:19:55+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskColList?page=1&limit=10
+[运行时间：0.076004s] [吞吐率：13.16req/s] [内存消耗：1,732.70kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskColList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskColList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:20:28+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.046003s] [吞吐率：21.74req/s] [内存消耗：1,688.23kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:20:28+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.064003s] [吞吐率：15.62req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:20:28+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：1,840.79kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:20:28+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?page=1&limit=10
+[运行时间：0.075004s] [吞吐率：13.33req/s] [内存消耗：2,512.21kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:20:37+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?task_kol_id=2
+[运行时间：0.071004s] [吞吐率：14.08req/s] [内存消耗：2,510.99kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'task_kol_id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,0 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:20:48+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?task_kol_id=2
+[运行时间：0.084005s] [吞吐率：11.90req/s] [内存消耗：2,510.99kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'task_kol_id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,0 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:23:57+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.061004s] [吞吐率：16.39req/s] [内存消耗：1,843.44kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:23:57+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?page=1&limit=10
+[运行时间：0.080004s] [吞吐率：12.50req/s] [内存消耗：2,514.98kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:23:58+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolEdit?task_kol_id=2
+[运行时间：0.112007s] [吞吐率：8.93req/s] [内存消耗：2,552.73kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolEdit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolEdit' => '',
+  'task_kol_id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolEdit[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select task_id,task_name from bus_task where is_use = 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`task_name` FROM `bus_task_kol` `a` INNER JOIN `bus_task` `b` ON `a`.`task_id`=`b`.`task_id` WHERE  `task_kol_id` = 2 LIMIT 1 [ RunTime:0.029001s ]
+[ error ] [8]未定义变量: platform[D:\phpstudy\WWW\dy\application\index\controller\Task.php:334]
+---------------------------------------------------------------
+[ 2019-11-24T20:25:22+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.060003s] [吞吐率：16.67req/s] [内存消耗：1,700.45kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:25:22+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?page=1&limit=10
+[运行时间：0.073005s] [吞吐率：13.70req/s] [内存消耗：2,514.83kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:25:24+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolEdit?task_kol_id=2
+[运行时间：0.087005s] [吞吐率：11.49req/s] [内存消耗：2,658.13kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolEdit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolEdit' => '',
+  'task_kol_id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolEdit[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol_edit.html [ array (
+  0 => 'task',
+  1 => 'task_kol',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select task_id,task_name from bus_task where is_use = 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`task_name` FROM `bus_task_kol` `a` INNER JOIN `bus_task` `b` ON `a`.`task_id`=`b`.`task_id` WHERE  `task_kol_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:35:31+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.058003s] [吞吐率：17.24req/s] [内存消耗：1,845.24kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:35:31+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?page=1&limit=10
+[运行时间：0.067004s] [吞吐率：14.92req/s] [内存消耗：2,514.83kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:36:16+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.062004s] [吞吐率：16.13req/s] [内存消耗：1,845.24kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:36:16+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?page=1&limit=10
+[运行时间：0.067004s] [吞吐率：14.92req/s] [内存消耗：2,514.83kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:36:26+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.068004s] [吞吐率：14.70req/s] [内存消耗：1,845.24kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:36:26+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?page=1&limit=10
+[运行时间：0.068004s] [吞吐率：14.70req/s] [内存消耗：2,514.83kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=aoel3j946hlrevc00onfhj3lo3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:36:34+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.057003s] [吞吐率：17.54req/s] [内存消耗：1,705.12kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:36:34+08:00 ] 127.0.0.1 GET www.dy.com/
+[运行时间：0.042002s] [吞吐率：23.81req/s] [内存消耗：1,685.08kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->login[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:36:45+08:00 ] 127.0.0.1 POST www.dy.com/index/User/toLogin
+[运行时间：0.197011s] [吞吐率：5.08req/s] [内存消耗：2,498.38kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'toLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://www.dy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/toLogin' => '',
+  'account' => 'zhongs',
+  'password' => '828310',
+)
+[ info ] [ RUN ] app\index\controller\User->toLogin[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` WHERE  `user_code` = 'zhongs'  AND `password` = '461368fae047aad1333d94aa2ae12ab3'  AND `is_use` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `sys_user`  SET `login_date`='2019-11-24 20:36:45'  WHERE  `user_code` = 'zhongs'  AND `password` = '461368fae047aad1333d94aa2ae12ab3'  AND `is_use` = 1 [ RunTime:0.110006s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:36:47+08:00 ] 127.0.0.1 GET www.dy.com/main
+[运行时间：0.060003s] [吞吐率：16.67req/s] [内存消耗：1,688.00kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'main',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/main' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->main[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:37:09+08:00 ] 127.0.0.1 GET www.dy.com/index/User/welcome
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：1,687.73kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/index/User/welcome' => '',
+)
+[ info ] [ RUN ] app\index\controller\User->welcome[ D:\phpstudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\user\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:37:14+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：1,700.66kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/main',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:37:15+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?page=1&limit=10
+[运行时间：0.067004s] [吞吐率：14.92req/s] [内存消耗：2,514.83kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,10 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:38:47+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：1,845.24kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T20:38:47+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?page=1&limit=10
+[运行时间：0.067003s] [吞吐率：14.92req/s] [内存消耗：2,514.83kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T20:41:19+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolEdit?task_kol_id=2
+[运行时间：0.093006s] [吞吐率：10.75req/s] [内存消耗：2,663.94kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolEdit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolEdit' => '',
+  'task_kol_id' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolEdit[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol_edit.html [ array (
+  0 => 'task',
+  1 => 'task_kol',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] select task_id,task_name from bus_task where is_use = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`task_name` FROM `bus_task_kol` `a` INNER JOIN `bus_task` `b` ON `a`.`task_id`=`b`.`task_id` WHERE  `task_kol_id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-24T21:04:57+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.048002s] [吞吐率：20.83req/s] [内存消耗：1,469.32kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot redeclare app\index\controller\Task::taskAddSubmit()[D:\phpstudy\WWW\dy\application\index\controller\Task.php:330]
+---------------------------------------------------------------
+[ 2019-11-24T21:05:17+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKol
+[运行时间：0.064003s] [吞吐率：15.62req/s] [内存消耗：1,855.56kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKol',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKol' => '',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKol[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ VIEW ] D:\phpstudy\WWW\dy\public/../application/index\view\task\task_kol.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-24T21:05:17+08:00 ] 127.0.0.1 GET www.dy.com/index/Task/taskKolList?page=1&limit=10
+[运行时间：0.077004s] [吞吐率：12.99req/s] [内存消耗：2,525.16kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Task',
+    2 => 'taskKolList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.dy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'referer' => 'http://www.dy.com/index/Task/taskKol',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=u7noop4bu51f3be4mnkucfrem3',
+)
+[ info ] [ PARAM ] array (
+  '/index/Task/taskKolList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\index\controller\Task->taskKolList[ D:\phpstudy\WWW\dy\application\index\controller\Task.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=cm_kol;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bus_task_kol` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bus_task_kol` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select a.*,b.task_name from bus_task_kol a inner join bus_task b on a.task_id = b.task_id order by task_kol_id desc limit 0,10 [ RunTime:0.001000s ]

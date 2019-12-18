@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+	<head>
+		<meta charset="UTF-8">
+		<title>任务编辑</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="stylesheet" href="__PUBLIC__/css/font.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/xadmin.css">
+		<script src="__PUBLIC__/lib/layui/layui.js" charset="utf-8"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/xadmin.js"></script>
+		<!--[if lt IE 9]>
+              <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+              <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+		<style type="text/css">
+			.xing {
+				color: #ee4d4d;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="layui-fluid">
+			<div class="layui-row layui-col-space15">
+				<div class="layui-col-md12">
+					<div class="layui-card">
+						<div class="layui-card-body ">
+							<form class="layui-form layui-col-space5">
+								<input type="hidden" value="{$Request.param.task_id}" name="task_id">
+								<div class="layui-form-item">
+									<label class="layui-form-label">任务名称 <span class="xing">&#10022</span></label>
+									<div class="layui-input-block">
+										<input type="text" id="task_name" name="task_name" required lay-verify="required" value="{$task.task_name}"
+										 autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">客户 <span class="xing">&#10022</span></label>
+									<div class="layui-input-block">
+										<select name="customer_id" id="customer_id" class="layui-select">
+											<option value="">请选择</option>
+											{volist name="customer" id="l"}
+											<option value="{$l.customer_id}" {if condition="$l.customer_id eq $task.customer_id" }selected{/if} >{$l.customer_code}</option>
+											{/volist}
+										</select>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">平台 <span class="xing">&#10022</span></label>
+									<div class="layui-input-block">
+										<select name="platform_id" id="platform_id" class="layui-select">
+											<option value="">请选择</option>
+											{volist name="platform" id="l"}
+											<option value="{$l.platform_id}" {if condition="$l.platform_id eq $task.platform_id" }selected{/if} >{$l.platform_name}</option>
+											{/volist}
+										</select>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">性别 <span class="xing">&#10022</span></label>
+									<div class="layui-input-block">
+										<select name="sex_id" id="sex_id" class="layui-select">
+											<option value="">请选择</option>
+											{volist name="sex" id="l"}
+											<option value="{$l.sex_id}" {if condition="$l.sex_id eq $task.sex_id" }selected{/if} >{$l.sex}</option>
+											{/volist}
+										</select>
+									</div>
+								</div>
+								<div class="layui-form-item layui-form-text">
+									<label class="layui-form-label">描述 <span class="xing">&#10022</span></label>
+									<div class="layui-input-block">
+										<textarea name="describe" class="layui-textarea" required lay-verify="required">{$task.describe}</textarea>
+									</div>
+								</div>
+								<div class="layui-form-item layui-form-text">
+									<label class="layui-form-label">备注</label>
+									<div class="layui-input-block">
+										<textarea name="remark" class="layui-textarea">{$task.remark}</textarea>
+										<div class="layui-form-mid layui-word-aux">
+											不超过500字符
+										</div>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<div class="layui-input-block">
+										<button type="submit" class="layui-btn" lay-filter="edit" lay-submit>立即提交</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var table, tableIns, layer;
+		layui.use(['laydate', 'form', 'table', 'layer'], function() {
+			var form = layui.form;
+			table = layui.table;
+			layer = layui.layer;
+
+			//自定义验证规则
+			form.verify({
+				remark: [/^[\S\s]{1,500}$/, '不超过500字符']
+			});
+			$('#task_name').select();
+
+			//监听提交
+			form.on('submit(edit)', function(data) {
+				//layer.load(0);
+				$.post('./taskEditSubmit', data.field, function(j) {
+					//layer.closeAll();
+					if (j.status == 'success') {
+						xadmin.close();
+						window.parent.addTask();
+					}
+					if (j.status == 'error') {
+						layer.msg('修改失败', {
+							icon: 2,
+							time: 2000
+						}, function() {});
+					}
+				}, 'json');
+				return false;
+			});
+			
+		});
+	</script>
+</html>

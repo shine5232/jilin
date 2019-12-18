@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<style type="text/css">
+			body,
+			html,
+			#allmap {
+				width: 60%;
+				height: 100%;
+				overflow: hidden;
+				margin: 0;
+				font-family: "微软雅黑";
+			}
+
+			#title {
+				display: flex;
+				align-items: center;
+				position: absolute;
+				bottom: 0;
+				width: 60%;
+			}
+
+			#title div {
+				padding: 15px;
+				flex: 1;
+				text-align: center;
+			}
+
+			.left {
+				background-color: #317528;
+				color: #fff;
+			}
+
+			.right {
+				background-color: #5F3B3B;
+				color: #fff;
+			}
+		</style>
+		<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=VeFpGPW4ycBTpLBivwGyvd2rYixLK5Rn"></script>
+		<link rel="stylesheet" href="__PUBLIC__/css/font.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/xadmin.css">
+		<script src="__PUBLIC__/lib/layui/layui.js" charset="utf-8"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/xadmin.js"></script>
+		<title>地图展示</title>
+	</head>
+	<body>
+		<div id="allmap"></div>
+		<div id="title">
+			<div class="left">经度：<font class="lng">120.009</font>
+			</div>
+			<div class="right">纬度：<font class="lat">37.098</font>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap"); // 创建Map实例
+	map.centerAndZoom(new BMap.Point(121.43, 37.50), 16); // 初始化地图,设置中心点坐标和地图级别
+	map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+	// 	var myCity = new BMap.LocalCity();
+	// 	myCity.get(myFung);
+	// 	function myFung(result){
+	// 		var cityName = result.name;
+	// 		map.setCenter(cityName);
+	// 	}
+	// var mousemove = true; //是否开启鼠标滑动获取经纬度,默认true
+	var time_1;
+	map.addEventListener("click", function(e) {
+		if (time_1 == undefined) {
+			time_1 = Date.parse(new Date());
+		} else {
+			var time_2 = Date.parse(new Date());
+		}
+		var lng = e.point.lng;
+		var lat = e.point.lat;
+		if (time_2 - time_1 > 1000) {
+			map.addEventListener("mousemove", move);
+			layer.open({
+				content: '确认保存'+lng+','+lat+'位置信息吗',
+				yes: function(index, layero) {
+					layer.load(0);
+					$.post('/index/Base/poAddSubmit',{ lng: lng,lat:lat }, function (j) {
+					    layer.closeAll();
+					    if (j.status == 'success') {
+					        layer.msg('添加成功', { icon: 1, time: 2000 }, function () { });
+					        tableIns.reload();
+					    }
+					    if (j.status == 'have') {
+					        layer.msg('已存在相同的记录', { icon: 21, time: 2000 }, function () { });
+					    }
+					    if (j.status == 'error') {
+					        layer.msg('添加失败', { icon: 2, time: 2000 }, function () { });
+					    }
+					}, 'json');
+					layer.close(index); //如果设定了yes回调，需进行手工关闭
+					return false;
+				}
+			});
+			time_1 = undefined;
+		}
+	});
+
+	function move(e) {
+		$(".lng").text(e.point.lng);
+		$(".lat").text(e.point.lat);
+	}
+</script>

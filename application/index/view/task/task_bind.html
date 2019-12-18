@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+	<head>
+		<meta charset="UTF-8">
+		<title>选项管理</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<link rel="stylesheet" href="__PUBLIC__/css/font.css">
+		<link rel="stylesheet" href="__PUBLIC__/css/xadmin.css">
+		<link rel="stylesheet" href="__PUBLIC__/lib/layui/css/layui.css">
+		<script src="__PUBLIC__/lib/layui/layui.js" charset="utf-8"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/xadmin.js"></script>
+		<!--[if lt IE 9]>
+              <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+              <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+		<style type="text/css">
+			.xing {
+				color: #ee4d4d;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="layui-fluid">
+			<div class="layui-row layui-col-space15">
+				<div class="layui-col-md12">
+					<div class="layui-card">
+						<div class="layui-card-body">
+							<form class="layui-form">
+								<table class="layui-table">
+									<colgroup>
+										<col width="150">
+										<col>
+										<col width="200">
+									</colgroup>
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>头条号</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										{foreach $account as $key => $vo}
+										<tr>
+											<td>{$vo.account_id}</td>
+											<td>{$vo.account_code}</td>
+											<td>
+												<input type="checkbox" name="account_id[]" value="{$vo.account_id}" title="绑定" lay-skin="primary">
+											</td>
+										</tr>
+										{/foreach}
+									</tbody>
+								</table>
+								<div class="layui-form-item">
+									<div class="layui-input-block">
+										<input type="hidden" name="task_id" value="{$task_id}" >
+										<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+										<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script>
+		layui.use('form', function() {
+			var form = layui.form;
+			
+			//监听提交
+			form.on('submit(formDemo)', function(data) {
+				var datas = data.field;
+				var account_id = [];
+				var task_id = data.field.task_id;
+				delete datas.task_id;
+				for (let i in datas) {
+					account_id.push(datas[i]);
+				}
+				$.post('./taskBindSubmit', {
+					task_id:task_id,
+					account_id:JSON.stringify(account_id),
+				}, function(j) {
+					if (j.status == 'success') {
+						layer.msg('绑定成功', {
+							icon: 1,
+							time: 2000
+						}, function() {
+							xadmin.close();
+						});
+					}
+					if (j.status == 'error') {
+						layer.msg('绑定失败', {
+							icon: 2,
+							time: 2000
+						}, function() {});
+					}
+				});
+				return false;
+			});
+		});
+	</script>
+</html>
