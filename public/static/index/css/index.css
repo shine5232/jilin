@@ -1,0 +1,165 @@
+.navbar {
+	border-radius: unset;
+	margin-bottom: 0;
+	background-color: #ffdf01;
+	border:none !important;
+}
+
+.navbar-nav {
+	/* float: right; */
+}
+
+.navbar-brand {
+	letter-spacing: 2px;
+	color: #000000 !important;
+}
+.navbar-inverse .navbar-toggle{
+	border-color: #fff;
+}
+.nav-item {
+	/* color: #000; */
+}
+
+.title-box {
+	padding: 2rem 0;
+}
+
+.title {
+	letter-spacing: 2px;
+}
+
+.box-l {
+	padding: 0 5rem;
+}
+
+.left-box,
+.right-box {
+	box-shadow: 1px 2px 8px 1px #6d6d6d;
+	min-height: 250px;
+	color: #fff;
+}
+
+.left-box {
+	background-color: #00b7f0;
+}
+
+.right-box {
+	background-color: #ffdf01;
+}
+
+.row-right,
+.row-left {
+	padding: 3rem 1rem;
+}
+
+.row-title {
+	padding: 2rem 1rem;
+	line-height: 26px;
+}
+
+.jiantou {
+	width: 50px;
+	height: 6px;
+	margin-top: 10px;
+}
+
+.icon-car {
+	padding: 3rem 0 0;
+}
+
+.icon-car img {
+	width: 6rem;
+	height: auto;
+}
+
+.icon-car div {
+	padding: 1rem;
+	font-size: 1.5rem;
+	color: #888;
+}
+
+.line-top {
+	box-shadow: 0 -5px 10px -5px #b6b6b6;
+}
+.bane-tit{
+	padding: 3rem 0;
+}
+.bane{
+	padding: 2rem 3rem;
+}
+.bane-car{
+	padding: 1rem;
+}
+.bane-car img{
+	width: 100%;
+	height: auto;
+}
+.top-note,.bot-note{
+	position: absolute;
+	text-shadow:-1px 0 white,0 1px white,1px 0 white,0 -1px white;
+}
+.top-note{
+	top: 3rem;
+}
+.bot-note{
+	bottom: 1.8rem;
+}
+.title-cont{
+	line-height: 1.4rem;
+	color: #666;
+}
+.line-bom{
+	border-bottom: 2px solid #eee;
+}
+.addr-span{
+	padding: 2px 0;
+	color: #ffdf01;
+	border-bottom: 2px solid #FFDF01;
+}
+.car-lis img{
+	width: 100%;
+}
+.bom-lis{
+	margin-top: 5rem;
+	padding: 5rem 0;
+	background-color: #ffdf01;
+}
+.note-item{
+	margin-top: 2rem;
+}
+.lis-title-item{
+	color: #fff;
+	padding: 0.5rem 0;
+}
+.footer{
+	padding: 4rem 0 2rem;
+	background-color: #000;
+}
+.wx{
+	color: #fff;
+	padding: 2rem 0;
+	letter-spacing: 2px;
+}
+.erma img{
+	width: 12rem;
+}
+.tel{
+	color: #ffdf01;
+	margin-top: 1rem;
+}
+.tel img{
+	width: 2rem;
+	margin-right: 1rem;
+}
+.tel .mobile{
+	margin-top: 1rem;
+}
+.addr div{
+	margin-top: 1.6rem;
+}
+.name{
+	color: #fff;
+}
+.addrs,.email{
+	color: #ffdf01;
+}

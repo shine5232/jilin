@@ -5,8 +5,9 @@ use think\Db;
 class Index extends \think\Controller
 
 {
-	//发布者
-	public function publish(){
-		return $this->fetch('publish');
+	public function index(){
+		$title = '首页';
+		$this->assign('title',$title);
+		return $this->fetch('index');
 	}
 }

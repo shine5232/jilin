@@ -42,11 +42,11 @@
 
 use think\Route;
 //群控接口
-Route::rule('dyOper','index/Api/dyOper','GET|POST');
+//Route::rule('dyOper','index/Api/dyOper','GET|POST');
 
 //管理后台登录
-Route::rule('','index/User/login','GET|POST');
+//Route::rule('','admin/User/login','GET');
 
 //控制面板首页
-Route::rule('main','index/User/main','GET|POST');
+Route::rule('main','admin/User/main','GET|POST');
 
