@@ -27,7 +27,7 @@ class User extends \think\Controller
 			'is_use'    =>  1
 		];
 		
-		$ar = Db::name('sys_user')->where($where)->find();
+		$ar = Db::name('user')->where($where)->find();
 		if($ar){
 			session('admin',$ar['user_code']);
 			
@@ -37,7 +37,7 @@ class User extends \think\Controller
 		$data = [
 			'login_date' 	=>	date('Y-m-d H:i:s',time())
 		];
-		$r = Db::name('sys_user')->where($where)->update($data);
+		$r = Db::name('user')->where($where)->update($data);
 		return json($ret);
 	}
 	
@@ -128,9 +128,9 @@ class User extends \think\Controller
 		$where = '';
 		
 		//count
-		$count = Db::name('sys_user')->where($where)->count();
+		$count = Db::name('user')->where($where)->count();
 		//list
-		$sql = 'select * from sys_user limit '.($page-1)*$limit.','.$limit;
+		$sql = 'select * from user limit '.($page-1)*$limit.','.$limit;
 		$list = Db::query($sql);
 		if($list){
 			$ret['count'] = $count;
@@ -148,14 +148,14 @@ class User extends \think\Controller
 		
 			$data = [];
 		
-			$r = Db::name('sys_user')->where('user_id',$id)->find();
+			$r = Db::name('user')->where('user_id',$id)->find();
 			if($r){
 				$data['is_use'] = $r['is_use']==0?1:0;
 			}
 		
-			$s = Db::name('sys_user')->where('user_id',$id)->update($data);
+			$s = Db::name('user')->where('user_id',$id)->update($data);
 			if($s){
-				$re = Db::name('sys_user')->where('user_id',$id)->find();
+				$re = Db::name('user')->where('user_id',$id)->find();
 				if($re){
 					$ret['status'] = 'success';
 					$ret['msg'] = $re['is_use'];
@@ -186,7 +186,7 @@ class User extends \think\Controller
 			'user_code'	=> $user_code
 		];
 		
-		$re = Db::name('sys_user')->where($data)->find();
+		$re = Db::name('user')->where($data)->find();
 		if($re){
 			$ret['status'] = 'have';
 		}else{
@@ -195,7 +195,7 @@ class User extends \think\Controller
 			$data['token'] = $this->uuid();
 			$data['is_use'] = $is_use;
 			$data['remark'] = $remark;
-			$r = Db::name('sys_user')->insert($data);
+			$r = Db::name('user')->insert($data);
 			if($r){
 				$ret['status'] = 'success';
 			}
@@ -212,7 +212,7 @@ class User extends \think\Controller
 			'status'	=>	'error'
 		];
 		
-		$r = Db::name('sys_user')->where(['user_id'=>$user_id])->delete();
+		$r = Db::name('user')->where(['user_id'=>$user_id])->delete();
 		if($r){
 			$ret['status'] = 'success';
 		}
@@ -223,14 +223,14 @@ class User extends \think\Controller
 	//用户编辑
 	public function userEdit(){
 		$user_id = input('user_id',0);
-		$list = Db::name('sys_user')->select(); 	
+		$list = Db::name('user')->select(); 	
 		$this->assign('list',$list);
 		
 		$where = [
 			'user_id'	=>	$user_id
 		];
 		
-		$item = Db::name('sys_user')->where($where)->find();
+		$item = Db::name('user')->where($where)->find();
 		$this->assign('user',$item);
 		
 		return $this->fetch();
@@ -255,7 +255,7 @@ class User extends \think\Controller
 			'user_code'	=>	$user_code,
 			'remark'	=>	$remark
 		];
-		$r = Db::name('sys_user')->where(['user_id'=>$user_id])->update($data);
+		$r = Db::name('user')->where(['user_id'=>$user_id])->update($data);
 		if($r){
 			$ret['status'] = 'success';
 		}
@@ -270,7 +270,7 @@ class User extends \think\Controller
 		$data = [
 			'password'	=>	$password
 		];
-		$r = Db::name('sys_user')->where(['user_id'=>$user_id])->update($data);
+		$r = Db::name('user')->where(['user_id'=>$user_id])->update($data);
 		if($r){
 			$ret['status'] = 'success';
 		}
